@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+ 	
+ 	<item
+ 	   
+        android:id="@+id/wifip2pset"
+        android:icon="@drawable/wifip2pset"
+        android:showAsAction="ifRoom|withText"
+        >
+    </item>
+    
+    <item
+        
+        android:id="@+id/searchpeer"
+        android:icon="@drawable/searchpeer"
+        android:showAsAction="ifRoom|withText"
+        >
+    </item>
+	
+</menu>

@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:background="#FF00FF" >
+		
+	    <TextView
+		    android:id="@+id/textView1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="11"
+		    android:text="" />
+
+		<Button
+		    android:id="@+id/back"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="Back" />
+	
+	</LinearLayout>
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="9"
+	     android:background="@drawable/bg"
+	     android:orientation="vertical"
+	     >
+
+	    <ListView
+	        android:id="@+id/peerlist"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bg"
+	        android:visibility="gone" >
+
+	    </ListView>
+
+	    <Button
+	        android:id="@+id/file"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="File"
+	        android:visibility="gone" />
+	    
+	     <Button
+	        android:id="@+id/camera"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="快照"
+	        android:visibility="gone" />
+	     <Button
+	        android:id="@+id/monitor"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="監視器"
+	        android:visibility="gone" />
+
+	    <Button
+	        android:id="@+id/End"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        
+	        android:text="End"
+	        android:visibility="gone" />
+
+	    <ListView
+	        android:id="@+id/listfile"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" 
+	        android:background="@drawable/bg"
+	        android:visibility="gone" >
+	    </ListView>
+
+	    <SurfaceView
+	        android:id="@+id/sV1"
+	        android:layout_width="320dp"
+	        android:layout_height="320dp"
+	          android:layout_gravity="center"
+	        android:visibility="gone"
+	         />
+	    <ImageView 
+    		android:id="@+id/iv"
+	    android:layout_gravity="center"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:visibility="gone" 
+    />
+
+	</LinearLayout>
+</LinearLayout>
